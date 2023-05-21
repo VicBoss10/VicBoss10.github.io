@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en-es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/logotipos/favicon.ico" />
+    <link href="../css/components/body_footer.css" rel="stylesheet">
+    <link href="../css/components/main-menu.css" rel="stylesheet">
+    <link href="../css/donar/donar.css" rel="stylesheet">
+    <link href="../css/donar/styleDA.css" rel="stylesheet">
+    <link href="../css/donar/styleDD.css" rel="stylesheet">
+    <script defer src="../js/modales.js"></script>
+    <script defer src="../js/leerform.js"></script>
+    <script src="../js/donar.js"> </script>
+    <title>Banco de Alimentos</title>
+</head>
+
+<body class="content">
+    <header>
+        <nav class="navMenu">
+            <div class="logo-container">
+                <img src="../img/logotipos/main-logo.png" alt="Logo principal" />
+                <p>Banco de alimentos de Pasto</p>
+            </div>
+            <div class="menus-container">
+                <ul id="main-menu-list" class="ul_main">
+                    <li id="main-item-inicio" class="main-items-menu" name="main-menu">
+                        <a id="main-a-inicio" class="main-a-menu" href="../inicio.html">Inicio</a>
+                    </li>
+    
+                    <li id="main-item-nosotros" class="main-items-menu" name="main-menu">
+                        <a id="main-a-nosotros" class="main-a-menu" href="./misionVison.html">Nosotros</a>
+                        <ul id="list-nosotros" class="ul-nosotros">
+                            <li id="item-misionVision" class="items-nosotros" name="nosotros-menu">
+                                <a id="item-a-misionVision" class="items-a-list" href="./misionVison.html">
+                                    Misión y Visión
+                                </a>
+                            </li>
+                            <li id="item-valores" class="items-nosotros" name="nosotros-menu">
+                                <a id="item-a-valores" class="items-a-list" href="./valores.html">
+                                    Valores
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+    
+                    <li id="main-item-dona" class="main-items-menu" name="main-menu">
+                        <a id="main-a-dona" class="main-a-menu" href="./donar.html">Dona Ya</a>
+                        <!-- <ul id="list-dona" class="ul-dona">
+                        <li id="item-alimentos" class="items-dona" name="dona-menu">
+                            <a id="item-a-alimentos" class="items-a-list" href="./donar.html">Donar alimentos</a>
+                        </li>
+                        <li id="item-dinero" class="items-dona" name="dona-menu">
+                            <a id="item-a-dinero" class="items-a-list" href="./donar.html">Donar dinero</a>
+                        </li>
+                    </ul> -->
+                    </li>
+    
+                    <li id="main-item-beneficiarios" class="main-items-menu" name="main-menu">
+                        <a id="main-a-beneficiarios" class="main-a-menu" href="./beneficiarios-info.html">
+                            Beneficiarios</a>
+                        <ul id="list-beneficiarios" class="ul-beneficiarios">
+                            <li id="item-ser_beneficiario" class="items-beneficiarios" name="beneficiarios-menu">
+                                <a id="item-a-ser_beneficiario" class="items-a-list"
+                                    href="./beneficiarios-ser.html">Quiero ser
+                                    beneficiario</a>
+                            </li>
+                            <li id="item-informacion" class="items-beneficiarios" name="beneficiarios-menu">
+                                <a id="item-a-informacion" class="items-a-list"
+                                    href="./beneficiarios-info.html">Información
+                                    beneficiarios</a>
+                            </li>
+                        </ul>
+                    </li>
+    
+                    <li id="main-item-contacto" class="main-items-menu" name="main-menu">
+                        <a id="main-a-contacto" class="main-a-menu" href="./contactos.html">Contacto</a>
+                    </li>
+    
+                    <li id="main-item-ingresar" class="main-items-menu" name="main-menu">
+                        <a id="main-a-ingresar" class="main-a-menu-ingresar" href="./login.html">Ingresar</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="main-donar">
+            <div class="text-container">
+                <p>¡Haz la diferencia en la vida de alguien hoy! Únete a nuestra familia solidaria y ayuda a combatir el
+                    hambre en tu comunidad. Somos un banco de alimentos comprometido con brindar apoyo a aquellos que
+                    más lo necesitan, y estamos buscando personas generosas como tú para unirse a nuestra
+                    causa.<br /><br />
+
+                    Imagina por un momento la sonrisa en el rostro de un niño cuando recibe una comida nutritiva, o el
+                    alivio en los ojos de una familia que puede disfrutar de una comida caliente después de pasar por
+                    momentos difíciles. Tu donación puede convertirse en la esperanza que necesitan para superar sus
+                    desafíos diarios. <br /><br />
+
+                    ¡Haz tu donación hoy y conviértete en un héroe anónimo para quienes luchan contra el hambre! Tu
+                    generosidad no solo llenará estómagos, sino también corazones. Gracias por ser parte de nuestra
+                    familia solidaria y por hacer la diferencia en el mundo.
+                </p>
+            </div>
+            <div class="donar-container">
+                <div class="donar-alimentos-container" id="donar-alimentos-container">
+                    <a href="">Donar alimentos
+                        <img src="../img/donaciones/donar_alimentos.png" alt="imagen de alimentos"></a>
+                </div>
+
+                <div class="donar-dinero-container" id="donar-dinero-container">
+                    <a href="">Donar dinero
+                        <img src="../img/donaciones/donar-dinero.jpg" alt="imagen de dinero"></a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- CONTENEDOR DIALOG DONAR ALIMENTOS -->
+    <conteiner id="contenedor-dialog">
+        <dialog open id="modal" style="visibility: hidden;">
+            <header>
+                <div class="logo-morado">
+                    <img src="../img/logotipos/My project-1 (3).png">
+                </div>
+                <button id="cerrar1"> x </button>
+            </header>
+
+            <div class="container">
+
+                <div class="title">Has tu donación aquí</div>
+                <form action="#" id="form-donar">
+                    <div class="user-details">
+
+                        <div class="input-box">
+                            <span class="details">Identificación o NIT</span>
+                            <input type="text" placeholder="Identificación o NIT" name="id" required>
+                        </div>
+                        <div class="input-box">
+                            <span class="details">Nombre del donante</span>
+                            <input type="text" placeholder="Nombre" name="nombre" required>
+                        </div>
+                        <div class="input-box">
+                            <span class="details">Fecha de donación</span>
+                            <input type="text" placeholder="dd/mm/aaaa" name="fecha" required>
+                        </div>
+                        <div class="input-box">
+                            <span class="details">Tipo de alimento</span>
+                            <select class="checkbox" name="tipo-alimento">
+                                <option>Lácteos</option>
+                                <option>Frutas y verduras</option>
+                                <option>Alimentos larga duración</option>
+                            </select>
+                        </div>
+                        <div class="input-box">
+                            <span class="details">Peso aproximado de la donación</span>
+                            <input type="text" placeholder="Kilogramos" name="peso" required>
+                        </div>
+                        <div class="input-box">
+                            <span class="details">¿Nesesitas transporte para la donación?</span>
+                            <select class="checkbox" name="transporte">
+                                <option>No</option>
+                                <option>Si</option>
+                            </select>
+
+                        </div>
+                        <div class="input-box">
+                            <span class="details">Dirección</span>
+                            <input type="text" placeholder="Dirección" name="direccion" required>
+                        </div>
+
+                        <div class="input-textarea">
+                            <span class="descripcion">Añade una descripción para tu donación</span>
+                            <textarea name="descripcion" id="textarea"
+                                placeholder="Añade una descripción de tu donación"></textarea>
+                        </div>
+
+                        <div class="button">
+                            <input type="submit" value="Registrar" id="enviar" onclick="donar()">
+                        </div>
+
+                    </div>
+                </form>
+            </div>
+
+        </dialog>
+    </conteiner>
+
+    <!-- CONTENEDOR DIALOG DONAR DINERO -->
+    <conteiner id="contenedor-donarDinero">
+        <dialog open id="modalDinero" style="visibility: hidden;">
+            <header>
+                <div class="logo-morado">
+                    <img src="../img/logotipos/My project-1 (2).png" id="ba">
+                </div>
+                <button id="cerrar2"> x </button>
+            </header>
+
+            <div class="container-bancos">
+
+                <div class="title">Has tu donación en cualquiera de los siguientes Bancos</div>
+
+                <div class="bancos">
+
+                    <conteiner class="fila" id="fila1">
+                        <div class="banco">
+                            <div class="logo">
+                                <img src="../img/logotipos/logos-bancos/bbancolombia.png" id="bbogota">
+                            </div>
+                            <span class="info"> Cuenta de ahorros <br> N: xxxxxxxxxxxx</span>
+                        </div>
+                        <div class="banco">
+                            <div class="logo">
+                                <img src="../img/logotipos/logos-bancos/bbbva.png" id="bbbva">
+                            </div>
+                            <span class="info"> Cuenta de ahorros <br> N: xxxxxxxxxxxx</span>
+                        </div>
+                        <div class="banco">
+                            <div class="logo">
+                                <img src="../img/logotipos/logos-bancos/bpopular.png" id="bpopular">
+                            </div>
+                            <span class="info"> Cuenta de ahorros <br> N: xxxxxxxxxxxx</span>
+                        </div>
+                    </conteiner>
+
+
+                    <conteiner class="fila" id="fila2">
+                        <div class="banco">
+                            <div class="logo">
+                                <img src="../img/logotipos/logos-bancos/bnequi.png" id="bnequi">
+                            </div>
+                            <span class="info"> Cuenta de ahorros <br> N: xxxxxxxxxxxx</span>
+                        </div>
+                        <div class="banco">
+                            <div class="logo">
+                                <img src="../img/logotipos/logos-bancos/bdaviplata.png" id="bdaviplata">
+                            </div>
+                            <span class="info"> Cuenta de ahorros <br> N: xxxxxxxxxxxx</span>
+                        </div>
+                        <div class="banco">
+                            <div class="logo">
+                                <img src="../img/logotipos/logos-bancos/bbancolombia.png" id="bbancolombia">
+                            </div>
+                            <span class="info"> Cuenta de ahorros <br> N: xxxxxxxxxxxx</span>
+                        </div>
+
+                    </conteiner>
+
+                </div>
+
+            </div>
+
+        </dialog>
+    </conteiner>
+    <footer>
+        <img class="ellipse_purple" src="../img/logotipos/Ellipse.png" alt="Ellipse morado">
+    </footer>
+</body>
+
+</html>

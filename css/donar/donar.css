@@ -1,0 +1,127 @@
+.main-donar {
+    display: flex;
+    margin-bottom: 3%;
+}
+
+.donar-container {
+    display: block;
+    width: 50%;
+    margin-right: 5%;
+}
+
+.donar-alimentos-container,
+.donar-dinero-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3em;
+    padding: 0.4em 1em;
+    margin-bottom: 3%;
+}
+
+.donar-alimentos-container {
+    background-color: #6852EF;
+}
+
+.donar-dinero-container {
+    background-color: #F54242;
+}
+
+.donar-alimentos-container a,
+.donar-dinero-container a {
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 120%;
+    display: block;
+    justify-content: center;
+}
+
+.donar-alimentos-container img,
+.donar-dinero-container img {
+    width: 100%;
+    border-radius: 2em;
+    padding: 0.4em 0.4em;
+}
+
+.text-container {
+    width: 100%;
+    margin-left: 5%;
+    margin-right: 3%;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+    color: black;
+    font-weight: 'Light 300';
+    font-size: 120%;
+    display: block;
+    display: flex
+}
+
+.boton-donar2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 0vh;
+    text-align: left;
+    position: absolute;
+    top: 57%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+}
+
+.volunteer-button {
+    cursor: pointer;
+    font-size: 18px;
+    background-color: #6852EF;
+    font-weight: bold;
+    font-size: 120%;
+    display: block;
+    border-radius: 3em;
+    padding: 0.4em 1em;
+    color: white;
+}
+
+.ini img {
+
+    overflow: hidden;
+    width: 500px;
+    height: 500px;
+}
+
+.ini {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1600px;
+    height: 340px;
+}
+
+.title-boton-donar {
+    text-align: left;
+    position: absolute;
+    top: 40%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    color: #6852EF;
+
+}
+
+.subtitle {
+    text-align: left;
+    position: absolute;
+    top: 48%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    color: #F54242;
+}
+
+/* (INICIO) COLOR DEL BOTON SELECCIONADO*/
+#main-a-dona {
+    background-color: #6852EF;
+    color: white;
+}
+/* (FIN) COLOR DEL BOTON SELECCIONADO*/

@@ -1,0 +1,41 @@
+.main-containers {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5%;
+}
+
+.text-containers {
+    margin-right: 5%;
+}
+
+.text-title {
+    font-weight: bold;
+    text-align: center;
+    color: #F54242;
+    font-size: 115%;
+    margin-top: 3%;
+    margin-bottom: 1%;
+}
+
+.text-content {
+    font-size: 115%;
+}
+
+#four-container, #five-container{
+    width: 30%;
+}
+
+#five-container {
+    margin-top: 2%;
+}
+
+/* (INICIO) COLOR DEL BOTON SELECCIONADO*/
+#main-a-nosotros {
+    background-color: #6852ef;
+    color: white;
+}
+#item-a-valores {
+    color: black;
+}
+/* (FIN) COLOR DEL BOTON SELECCIONADO*/

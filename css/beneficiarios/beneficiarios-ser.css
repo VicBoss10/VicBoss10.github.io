@@ -1,0 +1,104 @@
+.main-container {
+    display: flex;
+    justify-content: center;
+}
+
+.containers-ser {
+    max-width: 20%;
+    min-width: 30%;
+    border-radius: 1.5em;
+    background-color: #E7E7E7;
+    margin: 1em;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.blackLogo {
+    text-align: center;
+    width: 40%;
+}
+
+.inputData {
+    border-radius: 1.875em;
+    margin-bottom: 1.5em;
+    width: 65%;
+    height: 2.4em;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+.inputFile[type="file"] {
+    display: none;
+}
+
+.labelSubir {
+    border: 1px solid #ccc;
+    display: flex;
+    font-size: 80%;
+    cursor: pointer;
+
+    margin-bottom: 1.5em;
+    width: 65%;
+    height: 2.4em;
+    border-radius: 1.875em;
+    border-color: black;
+    margin-bottom: 6em;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    background-color: #6852EF;
+    color: white;
+}
+
+.botonEnviarSolicitud {
+    font-weight: bold;
+    width: 65%;
+    height: 2.4em;
+    border-radius: 1.875em;
+    margin-bottom: 3em;
+    background-color: #F54242;
+    color: white;
+}
+
+.botonEnviarSolicitud:active {
+    background-color: red;
+}
+
+.title {
+    display: flex;
+    margin-bottom: 5%;
+    border-radius: 3em;
+    
+    width: 6.5em;
+    height: 2.5em;
+    background-color: white;
+    color: #F54242;
+    
+    font-weight: bold;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.requeriments {
+    padding: 10%;
+}
+
+.requeriments-list {
+    margin-left: 5%;
+    margin-top: 5%;
+}
+
+/* (INICIO) COLOR DEL BOTON SELECCIONADO*/
+#main-a-beneficiarios {
+    background-color: #6852EF;
+    color: white;
+}
+#item-a-ser_beneficiario {
+    color: black;
+}
+/* (FIN) COLOR DEL BOTON SELECCIONADO*/

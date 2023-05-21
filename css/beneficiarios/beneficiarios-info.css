@@ -1,0 +1,66 @@
+.main-ben-info {
+    display: block;
+    justify-content: center;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.text-ben-info {
+    text-align: center;
+    color: #F54242;
+    font-weight: bold;
+    font-size: 120%;
+}
+
+.main-img-ben-info {
+    display: flex;
+    justify-content: center;
+}
+
+.main-img-ben-info img{
+    padding: 2%;
+    width: 60%;
+}
+
+.text-bottom-ben {
+    display: flex;
+    justify-content: center
+}
+
+.text-ben-container {
+    border-radius: 3em;
+    padding: 0.4em 1em;
+    padding: 1%;
+    width: 75%;
+    background-color: #7B7792;
+    display: flex;
+    justify-content: center
+}
+
+.text-bottom-ben-1 {
+    color: white;
+    font-weight: bold;
+    font-size: 120%;
+    border-radius: 3em;
+    padding: 0.4em 1em;
+}
+
+.text-bottom-ben-2 {
+    color: white;
+    font-weight: bold;
+    font-size: 120%;
+    border-radius: 3em;
+    padding: 0.4em 1em;
+    background-color: #6852EF;
+    margin-left: 2%;
+}
+
+/* (INICIO) COLOR DEL BOTON SELECCIONADO*/
+#main-a-beneficiarios {
+    background-color: #6852EF;
+    color: white;
+}
+#item-a-informacion {
+    color: black;
+}
+/* (FIN) COLOR DEL BOTON SELECCIONADO*/

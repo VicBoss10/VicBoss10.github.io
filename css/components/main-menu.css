@@ -1,0 +1,133 @@
+.navMenu {
+    display: flex;
+    align-items: top;
+    margin-top: 2.5%;
+    margin-right: 3%;
+    margin-left: 3%;
+    margin-bottom: 2%;
+}
+
+.logo-container {
+    align-items: center;
+    width: 17%;
+    display: flex;
+}
+
+.logo-container img {
+    width: 45%;
+    margin-right: 5%;
+}
+
+.logo-container p {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #6852EF;
+    line-height: 1;
+    width: 20%;
+}
+
+.menus-container {
+    width: 83%;
+    text-align: end;
+}
+
+.main-items-menu {
+    display: inline-block;
+    max-height: 100%;
+    max-width: 100%;
+    white-space: nowrap;
+}
+
+.main-a-menu {
+    text-decoration: none;
+    color: #F54242;
+    font-weight: bold;
+    font-size: 1.2em;
+    display: block;
+    border-radius: 3em;
+    padding: 0.4em 1em;
+}
+
+/* Boton ingresar */
+.main-a-menu-ingresar {
+    margin-left: 10px;
+    text-decoration: none;
+    color: white;
+    background-color: #F54242;
+    font-weight: bold;
+    font-size: 1.2em;
+    display: block;
+    border-radius: 3em;
+    padding: 0.4em 1em;
+}
+
+.items-a-list {
+    text-decoration: none;
+    color: #7B7792;
+    font-weight: bold;
+}
+
+.ul-beneficiarios {
+    margin-left: -25px;
+    text-align: center;
+    list-style-type: none;
+    position: absolute;
+    background-color: transparent;
+    display: none;
+}
+
+.ul-dona {
+    margin-left: -8px;
+    text-align: center;
+    list-style-type: none;
+    position: absolute;
+    background-color: transparent;
+    display: none;
+}
+.ul-nosotros {
+    margin-left: 3px;
+    text-align: center;
+    list-style-type: none;
+    position: absolute;
+    background-color: transparent;
+    display: none;
+}
+
+/*Inicio Escuchadores*/
+
+.main-a-menu:hover {
+    background-color: #F4F4F4
+}
+
+.main-a-menu:active {
+    color: white;
+    background-color: #6852EF;
+}
+
+/* Escuchadores de Ingresar */
+.main-a-menu-ingresar:hover {
+    color: #F54242;
+    background-color: #F4F4F4;
+}
+
+.main-a-menu-ingresar:active {
+    color: white;
+    background-color: #6852EF;
+}
+
+.main-items-menu:hover .ul-beneficiarios {
+    display: block;
+}
+
+.main-items-menu:hover .ul-dona {
+    display: block;
+}
+
+.main-items-menu:hover .ul-nosotros {
+    display: block;
+}
+
+.items-a-list:hover{
+    color: black;
+}
+/*Fin Escuchadores*/

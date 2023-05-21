@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en-es">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="../img/logotipos/favicon.ico" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link href="../css/components/body_footer.css" rel="stylesheet">
+    <link href="../css/components/administrador-menu.css" rel="stylesheet">
+    <link href="../css/admin-donaciones/admin-dona-reg.css" rel="stylesheet">
+
+    <title>Banco de Alimentos</title>
+</head>
+
+<body class="content">
+    <header>
+        <nav class="navMenu">
+            <div class="logo-container">
+                <img src="../img/logotipos/main-logo.png" alt="Logo principal">
+                <p>Banco de alimentos de Pasto</p>
+            </div>
+            <div class="admin-menus-container">
+                <ul id="admin-menu-list" class="admin-main-ul">
+                    <li id="admin-main-item-dona" class="admin-main-items-menu" name="admin-main-menu">
+                        <a id="admin-main-a-dona" class="admin-main-a-menu" href="../html/admin-dona-sol.html">Donaciones</a>
+                        <ul id="admin-ul-dona" class="admin-ul-dona">
+                            <li id="admin-item-solicitud" class="admin-items-dona" name="admin-sesion-menu">
+                                <a id="admin-item-a-dona" class="admin-items-a-list" href="../html/admin-dona-sol.html">
+                                    Solicitudes
+                                </a>
+                            </li>
+                            <li id="admin-item-registro" class="admin-items-registro" name="admin-sesion-menu">
+                                <a id="admin-item-a-registro" class="admin-items-a-list" href="../html/admin-dona-reg.html">
+                                    Registro
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li id="admin-main-item-beneficiarios" class="admin-main-items-menu" name="admin-main-menu">
+                        <a id="admin-main-a-beneficiarios" class="admin-main-a-menu" href="">Beneficiarios</a>
+                    </li>
+
+                    <li id="admin-main-item-voluntarios" class="admin-main-items-menu" name="admin-main-menu">
+                        <a id="admin-main-a-voluntarios" class="admin-main-a-menu" href="">Voluntarios</a>
+                    </li>
+
+                    <li id="admin-main-item-sesion" class="admin-main-items-menu" name="admin-main-menu">
+                        <img src="../img/administrador/user-2.png" alt="logo usuario">
+                        <!-- <a id="admin-main-a-sesion" class="admin-main-a-menu" href=""></a> -->
+                        <ul id="admin-list-sesion" class="admin-ul-sesion">
+                            <li id="admin-item-sesion" class="admin-items-sesion" name="admin-sesion-menu">
+                                <a id="admin-item-a-sesion" class="admin-items-a-list" href="">
+                                    Cerrar Sesión
+                                </a>
+                            </li>
+                        </ul>
+
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="admin-main-div">
+            <div class="">
+                <div class="">
+                    <table class="table table-dark table-striped table-hover" id="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">Id o Nit</th>
+                                <th scope="col">Nombre</th>
+                                <th scope="col">Correo</th>
+                                <th scope="col">Celular Teléfono</th>
+                                <th scope="col">Dirección</th>
+                                <th scope="col">Id Donación</th>
+                                <th scope="col">Fecha</th>
+                                <th scope="col">Tipo de producto</th>
+                                <th scope="col">Peso</th>
+                                <th scope="col">Descripción</th>
+                                <th scope="col">Estado</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>5001</td>
+                                <td>Ejemplo1</td>
+                                <td>Ejemplo1@ejemplo.com</td>
+                                <td>5001</td>
+                                <td>#00 #00 #00</td>
+                                <td>5001</td>
+                                <td>15-03-2023</td>
+                                <td>EjemploTipo1</td>
+                                <td>5001</td>
+                                <td>descripcion1</td>
+                                <td>Recibido</td>
+                            </tr>
+                            <tr>
+                                <td>5002</td>
+                                <td>Ejemplo2</td>
+                                <td>Ejemplo2@ejemplo.com</td>
+                                <td>5002</td>
+                                <td>#00 #00 #00</td>
+                                <td>5002</td>
+                                <td>15-03-2023</td>
+                                <td>EjemploTipo2</td>
+                                <td>5002</td>
+                                <td>descripcion2</td>
+                                <td>Recibido</td>
+                            </tr>
+                            <tr>
+                                <td>5003</td>
+                                <td>Ejemplo3</td>
+                                <td>Ejemplo3@ejemplo.com</td>
+                                <td>5003</td>
+                                <td>#00 #00 #00</td>
+                                <td>5003</td>
+                                <td>15-03-2023</td>
+                                <td>EjemploTipo3</td>
+                                <td>5003</td>
+                                <td>descripcion3</td>
+                                <td>Recibido</td>
+                            </tr>
+                            <tr>
+                                <td>5004</td>
+                                <td>Ejemplo4</td>
+                                <td>Ejemplo4@ejemplo.com</td>
+                                <td>5004</td>
+                                <td>#00 #00 #00</td>
+                                <td>5004</td>
+                                <td>15-03-2023</td>
+                                <td>EjemploTipo4</td>
+                                <td>5004</td>
+                                <td>descripcion4</td>
+                                <td>Recibido</td>
+                            </tr>
+                            <tr>
+                                <td>5005</td>
+                                <td>Ejemplo5</td>
+                                <td>Ejemplo5@ejemplo.com</td>
+                                <td>5005</td>
+                                <td>#00 #00 #00</td>
+                                <td>5005</td>
+                                <td>15-03-2023</td>
+                                <td>EjemploTipo5</td>
+                                <td>5005</td>
+                                <td>descripcion5</td>
+                                <td>Recibido</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <footer>
+        <img class="ellipse_purple" src="../img/logotipos/Ellipse.png" alt="Ellipse morado">
+    </footer>
+</body>
+
+</html>

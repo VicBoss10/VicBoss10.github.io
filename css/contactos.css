@@ -1,0 +1,52 @@
+.contact-container {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.img_main-container {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    width: 50%;
+}
+
+
+.img_main-container img {
+    position: relative;
+    left: 50%;
+    width: 50%;
+    border-radius: 2em;
+}
+
+.information-container-ben {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    height: 100%;
+    width: 50%;
+}
+
+.icon-container-ben {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    margin: 2%;
+    margin-left: 5%;
+    overflow: auto;
+}
+
+.text-icon-ben {
+    margin-left: 3%;
+    font-size: 120%;
+    font-weight: bold;
+    color: #F54242;
+}
+
+/* (INICIO) COLOR DEL BOTON SELECCIONADO*/
+#main-a-contacto {
+    background-color: #6852EF;
+    color: white;
+}
+/* (FIN) COLOR DEL BOTON SELECCIONADO*/

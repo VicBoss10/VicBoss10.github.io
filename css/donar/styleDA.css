@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+body{
+    font-family: 'Poppins';
+    display: block;
+}
+
+#modal{
+    height: 100%;
+    /* min-height: 800px; */
+    /* max-height: 700px; */
+    width: 80%;
+    max-width: 600px;
+    padding: 0px;
+    border-radius: 5px;
+    border-width: 1px;
+    border-color: #7b7792;
+    margin-bottom: 10px;
+    box-shadow: 5px 5px 10px #F54242;
+    
+}
+
+
+
+#modal header{
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    background-color: #F54242;
+}
+
+#modal .logo-morado{
+    display: flex;
+}
+
+#modal .logo-morado img{
+    height: 120px;
+}
+
+#cerrar1 {
+    
+    height: 30px;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-block-start: 30px;
+    margin-inline-end: 20px;
+    background-color: #fff;
+    font-family: 'Lucida Sans Regular', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    border: 1px;
+    border-radius: 5px;
+}
+
+.container {
+    padding: 25px 30px;
+
+}
+
+.container .title { 
+    font-size: 20px;
+    font-weight: bold;
+    font-family: sans-serif;
+    position: relative;
+    color: #6852ef;
+}
+
+.container form .user-details{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 15px 0 10px 0;
+}
+
+form .user-details .input-box{
+    margin-bottom: 5px;
+    width: calc(100% / 2 - 20px);
+
+}
+
+.user-details .input-box input{
+
+    height: 30px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 10px;
+    font-size: 16px;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+}
+
+.user-details .input-box .details{
+
+    display: block;
+    font-family: 'Poppins' sans-serif;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+form .checkbox{
+
+    height: 30px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 10px;
+    font-size: 16px;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+}
+
+form .checkbox:focus{
+    border-color: #6852ef;
+
+}
+
+.user-details .input-box input:focus,
+.user-details .input-box input:valid{
+
+    border-color: #6852ef;
+}
+
+
+.input-textarea{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: left;
+    align-content: left;
+    align-items: left;
+    height: 30%;
+    margin-bottom: 10px;
+    width: 100%;
+    
+}
+
+#textarea {
+    display: flex;
+    font-family: "Poppinns" sans-serif;
+    background-color: rgb(255, 238, 216);
+    height: 80px;
+    max-height: 300px;
+    outline: none;
+    border-radius: 5px;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+}
+
+#textarea:focus {
+    border-color: #6852ef;
+}
+
+form .button {
+    display: block;
+    justify-content: center;
+    padding-left: 0px;
+    text-align: center;
+    height: 40px;
+    width: 100%;
+    margin: 0px 0;
+}
+
+form .button input {
+    margin: 0;
+    height: 100%;
+    width: 150px;
+    border-radius: 5px;
+    outline: none;
+    color: #fff;
+    background-color: #6852ef;
+
+}
+
+.button input:focus{
+    background-color:#F54242 ;
+}
+
+/* CENTRALIZACION DIALOG */
+
+#contenedor-dialog {
+    position: absolute;
+    height: 650px;
+    width: 60%;
+    min-width: 700px;
+    z-index: 999;
+    top: 50%;
+    left: 50%; 
+    transform: translate(-30%, -50%); 
+    overflow: hidden;
+}
+
+/* 
+#contenedor-donarDinero {
+    position: absolute; 
+    height: 650px;
+    width: 700px; 
+    min-width: 900px;
+    z-index: 999;
+    top: 50%;
+    left: 50%; 
+    transform: translate(-30%, -50%); 
+    overflow: hidden; 
+}
+
+*/

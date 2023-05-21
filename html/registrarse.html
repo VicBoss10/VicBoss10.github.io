@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="shortcut icon" href="../img/logotipos/favicon.ico" />
+  <link rel="stylesheet" type="text/css" href="../css/login/style3.css">
+  <title>Registrarse</title>
+  <script src="../js/registro.js"> </script>
+</head>
+
+<body>
+  <div class="img-esquina">
+    <img src="../img/logotipos/elipse-vertical.png" alt="imagen-esquina" width="400" height="450">
+  </div>
+
+  <div class="registro-container">
+    <form>
+
+      <div style="text-align: center;">
+        <img src="../img/logotipos/My project-1 (6).png" alt="Logo-banco-naranjasl" width="120" height="120"
+          style="text-align: center;">
+      </div>
+
+      <div class="texto-registrarse">
+        <p>Registrarse</p>
+      </div>
+
+      <div class="input-upcontainer">
+        <input type="text" id="username" name="username" placeholder="nombre completo" style="margin-top: 3px;">
+        <input type="text" id="cc" name="cc" placeholder="cc. 123456789" style="margin-top: 3px;">
+        <input type="text" id="correo" name="correo" placeholder="Correo Electronico" style="margin-top: 3px;">
+        <input type="password" id="password" name="password" placeholder="*************" style="margin-top: 3px;">
+        <input type="text" id="codigo" name="codigo" placeholder="codigo" style="margin-top: 3px;">
+      </div>
+      <div class="input-container">
+        <input type="submit" value="Registrarse" onclick="registrar()">
+      </div>
+
+      <div class="texto-cualesmicodigo">
+        <a href="#" target="_blank" rel="noopener noreferrer" onclick="mostrarCodigo(event)">
+          <p>¿Cual es mi código?</p>
+        </a>
+      </div>
+
+
+
+    </form>
+  </div>
+</body>
+
+</html>

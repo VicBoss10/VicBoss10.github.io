@@ -1,0 +1,43 @@
+.text-containers {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.main-container-MisionVision {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.text-titles {
+    margin-bottom: 4%;
+    font-weight: bold;
+    color: #F54242;
+    vertical-align: center;
+    text-align: center;
+    font-size: 120%;
+}
+
+.text-mision-vision {
+    font-size: 115%;
+    width: 100% ;
+}
+
+.img-container {
+    width: 235%;
+}
+
+.img-donacion {
+    width: 100%;
+}
+
+/* (INICIO) COLOR DEL BOTON SELECCIONADO*/
+#main-a-nosotros {
+    background-color: #6852ef;
+    color: white;
+}
+#item-a-misionVision {
+    color: black;
+}
+/* (FIN) COLOR DEL BOTON SELECCIONADO*/

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en-es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/logotipos/favicon.ico" />
+    <link href="../css/components/body_footer.css" rel="stylesheet">
+    <link href="../css/components/main-menu.css" rel="stylesheet">
+    <link href="../css/beneficiarios/beneficiarios-ser.css" rel="stylesheet">
+    <title>Banco de Alimentos</title>
+</head>
+
+<body class="content">
+    <header>
+        <nav class="navMenu">
+            <div class="logo-container">
+                <img src="../img/logotipos/main-logo.png" alt="Logo principal" />
+                <p>Banco de alimentos de Pasto</p>
+            </div>
+            <div class="menus-container">
+                <ul id="main-menu-list" class="ul_main">
+                    <li id="main-item-inicio" class="main-items-menu" name="main-menu">
+                        <a id="main-a-inicio" class="main-a-menu" href="../inicio.html">Inicio</a>
+                    </li>
+    
+                    <li id="main-item-nosotros" class="main-items-menu" name="main-menu">
+                        <a id="main-a-nosotros" class="main-a-menu" href="./misionVison.html">Nosotros</a>
+                        <ul id="list-nosotros" class="ul-nosotros">
+                            <li id="item-misionVision" class="items-nosotros" name="nosotros-menu">
+                                <a id="item-a-misionVision" class="items-a-list" href="./misionVison.html">
+                                    Misión y Visión
+                                </a>
+                            </li>
+                            <li id="item-valores" class="items-nosotros" name="nosotros-menu">
+                                <a id="item-a-valores" class="items-a-list" href="./valores.html">
+                                    Valores
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+    
+                    <li id="main-item-dona" class="main-items-menu" name="main-menu">
+                        <a id="main-a-dona" class="main-a-menu" href="./donar.html">Dona Ya</a>
+                        <!-- <ul id="list-dona" class="ul-dona">
+                        <li id="item-alimentos" class="items-dona" name="dona-menu">
+                            <a id="item-a-alimentos" class="items-a-list" href="./donar.html">Donar alimentos</a>
+                        </li>
+                        <li id="item-dinero" class="items-dona" name="dona-menu">
+                            <a id="item-a-dinero" class="items-a-list" href="./donar.html">Donar dinero</a>
+                        </li>
+                    </ul> -->
+                    </li>
+    
+                    <li id="main-item-beneficiarios" class="main-items-menu" name="main-menu">
+                        <a id="main-a-beneficiarios" class="main-a-menu" href="./beneficiarios-info.html">
+                            Beneficiarios</a>
+                        <ul id="list-beneficiarios" class="ul-beneficiarios">
+                            <li id="item-ser_beneficiario" class="items-beneficiarios" name="beneficiarios-menu">
+                                <a id="item-a-ser_beneficiario" class="items-a-list"
+                                    href="./beneficiarios-ser.html">Quiero ser
+                                    beneficiario</a>
+                            </li>
+                            <li id="item-informacion" class="items-beneficiarios" name="beneficiarios-menu">
+                                <a id="item-a-informacion" class="items-a-list"
+                                    href="./beneficiarios-info.html">Información
+                                    beneficiarios</a>
+                            </li>
+                        </ul>
+                    </li>
+    
+                    <li id="main-item-contacto" class="main-items-menu" name="main-menu">
+                        <a id="main-a-contacto" class="main-a-menu" href="./contactos.html">Contacto</a>
+                    </li>
+    
+                    <li id="main-item-ingresar" class="main-items-menu" name="main-menu">
+                        <a id="main-a-ingresar" class="main-a-menu-ingresar" href="./login.html">Ingresar</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="main-container">
+        <div class="containers-ser">
+            <img class="blackLogo" src="../img/logotipos/My project-1 (1).png" alt="logo negro" />
+            <input class="inputData" type="text" placeholder="Nombre" name="nombre" />
+            <input class="inputData" type="text" placeholder="Id o Nit" name="id" />
+            <input class="inputData" type="text" placeholder="Correo" name="correo" />
+            <input class="inputData" type="text" placeholder="Celular o teléfono" name="telefono" />
+            <input class="inputData" type="text" placeholder="Dirección" name="direccion" />
+            <label class="labelSubir">
+                <input class="inputFile" type="file" name="subirArchivo"
+                    accept="image/jpeg,image/gif,image/png,application/pdf,image/x-eps" />Subir Archivos</label>
+            <input type="submit" class="botonEnviarSolicitud" />
+        </div>
+        <div class="containers-ser">
+            <div class="requeriments">
+                <div class="title">
+                    <p>Archivo</p>
+                </div>
+
+                <p>Para completar la solicitud de beneficiario del banco de alimentos se debe adjuntar una carta a la
+                    plataforma (preferiblemente en pdf) con los siguientes datos: </p>
+                <ol>
+                    <li class="requeriments-list">
+                        <p>La labor social que realiza.</p>
+                    </li>
+                    <li class="requeriments-list">
+                        <p>Número de personas atendidas.</p>
+                    </li>
+                    <li class="requeriments-list">
+                        <p>Sector en el que atiende.</p>
+                    </li>
+                    <li class="requeriments-list">
+                        <p>Necesidades en alimentos.</p>
+                    </li>
+                    <li class="requeriments-list">
+                        <p>Carnet vigente en manipulación de alimentos.</p>
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <img class="ellipse_purple" src="../img/logotipos/Ellipse.png" alt="Ellipse morado">
+    </footer>
+
+</body>
+
+</html>

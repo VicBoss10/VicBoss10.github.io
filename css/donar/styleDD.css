@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+body{
+    font-family: 'Poppins';
+}
+
+#modalDinero {
+    width: 700px;
+    padding: 0px;
+    border-radius: 5px;
+    border-width: 1px;
+    box-shadow: 5px 5px 10px #6852ef;
+}
+
+#modalDinero header{
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    background-color: #6852ef;
+}
+
+/* .container-bancos {
+    background-color: #7b7792;
+} */
+
+
+.fila .banco{
+    margin-right: 10px;
+    height: 100px;
+    display: inline-table;
+}
+
+
+
+.logo-morado #ba {
+    height: 130px;
+
+}
+
+.logo{
+    display: flex;
+}
+
+.logo #bbogota{
+    width: 200px;
+}
+
+.logo #bbbva {
+    width: 150px;
+}
+
+.logo #bpopular {
+    width: 220px;
+}
+
+.logo #bnequi {
+    width: 200px;
+}
+
+.logo #bdaviplata {
+    width: 180px;
+}
+
+.logo #bbancolombia {
+
+    width: 200px;
+}
+
+#cerrar2 {
+    
+    height: 30px;
+    display: flex;
+    margin-block-start: 30px;
+    margin-inline-end: 20px;
+    background-color: #fff;
+    font-family: 'Lucida Sans Regular', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    border: 1px;
+    border-radius: 5px;
+   
+}
+
+.container-bancos {
+    padding: 25px 30px;
+}
+
+.container-bancos .title { 
+    font-size: 25px;
+    font-weight: 500;
+    font-family: sans-serif;
+    position: relative;
+}
+
+
+
+.banco .info {
+
+    display: block;
+    font-family: 'Poppins' sans-serif;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+/* CENTRALIZACION DIALOG */
+
+#contenedor-donarDinero {
+    position: absolute; 
+    height: 650px;
+    width: 700px; 
+    min-width: 900px;
+    z-index: 999;
+    top: 50%;
+    left: 50%; 
+    transform: translate(-30%, -50%); 
+    overflow: hidden; 
+}
