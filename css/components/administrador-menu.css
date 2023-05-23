@@ -53,8 +53,7 @@
 }
 
 .admin-ul-sesion {
-    margin-left: -6.2em;
-    text-align: end;
+    margin-left: -70px;
     list-style-type: none;
     position: absolute;
     background-color: transparent;
@@ -70,7 +69,7 @@
 }
 
 .admin-items-a-list {
-    text-decoration: none;
+    text-decoration: none;  
     color: #7B7792;
     font-weight: bold;
     white-space: nowrap;

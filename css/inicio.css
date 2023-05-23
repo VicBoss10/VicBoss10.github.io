@@ -34,6 +34,20 @@
     text-align: center;
 }
 
+/* X BOOTSRAP: MENU*/
+.ul-nosotros {
+    margin-left: -30px;
+}
+.ul-beneficiarios {
+    margin-left: -25px;
+    text-align: center;
+    list-style-type: none;
+    position: absolute;
+    background-color: transparent;
+    display: none;
+}
+
+
 #dona-a {
     width: 100%;
     font-weight: bold;
@@ -106,5 +120,13 @@
 #main-a-inicio {
     background-color: #6852ef;
     color: white;
+}
+
+#voluntario-a:hover {
+    background-color: #7763f2;
+}
+
+#dona-a:hover {
+    background-color: red;
 }
 /* (FIN) COLOR DEL BOTON SELECCIONADO*/

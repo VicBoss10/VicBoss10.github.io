@@ -25,15 +25,18 @@
             <div class="admin-menus-container">
                 <ul id="admin-menu-list" class="admin-main-ul">
                     <li id="admin-main-item-dona" class="admin-main-items-menu" name="admin-main-menu">
-                        <a id="admin-main-a-dona" class="admin-main-a-menu" href="../html/admin-dona-sol.html">Donaciones</a>
+                        <a id="admin-main-a-dona" class="admin-main-a-menu"
+                            href="../html/admin-dona-sol.html">Donaciones</a>
                         <ul id="admin-ul-dona" class="admin-ul-dona">
                             <li id="admin-item-solicitud" class="admin-items-dona" name="admin-sesion-menu">
-                                <a id="admin-item-a-solicitud" class="admin-items-a-list" href="../html/admin-dona-sol.html">
+                                <a id="admin-item-a-solicitud" class="admin-items-a-list"
+                                    href="../html/admin-dona-sol.html">
                                     Solicitudes
                                 </a>
                             </li>
                             <li id="admin-item-registro" class="admin-items-registro" name="admin-sesion-menu">
-                                <a id="admin-item-a-registro" class="admin-items-a-list" href="../html/admin-dona-reg.html">
+                                <a id="admin-item-a-registro" class="admin-items-a-list"
+                                    href="../html/admin-dona-reg.html">
                                     Registro
                                 </a>
                             </li>
@@ -41,7 +44,20 @@
                     </li>
 
                     <li id="admin-main-item-beneficiarios" class="admin-main-items-menu" name="admin-main-menu">
-                        <a id="admin-main-a-beneficiarios" class="admin-main-a-menu" href="">Beneficiarios</a>
+                        <a id="admin-main-a-beneficiarios" class="admin-main-a-menu" href="../html/admin-ben-sol.html">Beneficiarios</a>
+                        <ul id="admin-ul-ben" class="admin-ul-dona">
+                            <li id="admin-item-solicitud1" class="admin-items-ben" name="admin-sesion-menu">
+                                <a id="admin-item-a-solicitud1" class="admin-items-a-list"
+                                    href="../html/admin-ben-sol.html">
+                                    Solicitudes
+                                </a>
+                            </li>
+                            <li id="admin-item-registro1" class="admin-items-registro" name="admin-sesion-menu">
+                                <a id="admin-item-a-registro1" class="admin-items-a-list" href="../html/admin-ben-reg.html">
+                                    Registro
+                                </a>
+                            </li>
+                        </ul>
                     </li>
 
                     <li id="admin-main-item-voluntarios" class="admin-main-items-menu" name="admin-main-menu">
@@ -49,13 +65,12 @@
                     </li>
 
                     <li id="admin-main-item-sesion" class="admin-main-items-menu" name="admin-main-menu">
-                        <img src="../img/administrador/user-2.png" alt="logo usuario">
+                        <img class="img-main-a-sesion" src="../img/administrador/user-2.png" alt="logo usuario">
                         <!-- <a id="admin-main-a-sesion" class="admin-main-a-menu" href=""></a> -->
                         <ul id="admin-list-sesion" class="admin-ul-sesion">
                             <li id="admin-item-sesion" class="admin-items-sesion" name="admin-sesion-menu">
-                                <a id="admin-item-a-sesion" class="admin-items-a-list" href="">
-                                    Cerrar Sesión
-                                </a>
+                                <a id="admin-item-a-sesion" class="admin-items-a-list" href="../inicio.html">Cerrar
+                                    Sesión</a>
                             </li>
                         </ul>
 
@@ -69,7 +84,7 @@
         <div class="admin-main-div">
             <div class="">
                 <div class="">
-                    <button class="btn btn-success mb-2">Registrar nueva donación</button>
+                    <!-- <button class="btn btn-success mb-2">Registrar nueva donación</button> -->
                     <table class="table table-dark table-striped table-hover" id="table">
                         <thead>
                             <tr>
@@ -240,6 +255,10 @@
                         </div>
                         <div class="form-control border-white w-100">
                             <label for="">Estado :</label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="form-control border-white w-100">
+                            <label for="">Transporte :</label>
                             <input type="text" class="form-control">
                         </div>
                         <div class="form-control border-white">

@@ -10,7 +10,7 @@
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link href="../css/components/body_footer.css" rel="stylesheet">
     <link href="../css/components/administrador-menu.css" rel="stylesheet">
-    <link href="../css/admin-donaciones/admin-dona-reg.css" rel="stylesheet">
+    <link href="../css/admin-beneficiarios/admin-ben-sol.css" rel="stylesheet">
 
     <title>Banco de Alimentos</title>
 </head>
@@ -84,6 +84,7 @@
         <div class="admin-main-div">
             <div class="">
                 <div class="">
+                    <!-- <button class="btn btn-success mb-2">Registrar nueva donación</button> -->
                     <table class="table table-dark table-striped table-hover" id="table">
                         <thead>
                             <tr>
@@ -98,6 +99,7 @@
                                 <th scope="col">Peso</th>
                                 <th scope="col">Descripción</th>
                                 <th scope="col">Estado</th>
+                                <th scope="col">Acción</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -113,6 +115,12 @@
                                 <td>5001</td>
                                 <td>descripcion1</td>
                                 <td>Recibido</td>
+                                <td>
+                                    <div class="d-flex flex-row">
+                                        <button class="btn btn-warning">Editar</button>
+                                        <button class="btn btn-primary">Ocultar</button>
+                                    </div>
+                                </td>
                             </tr>
                             <tr>
                                 <td>5002</td>
@@ -125,7 +133,13 @@
                                 <td>EjemploTipo2</td>
                                 <td>5002</td>
                                 <td>descripcion2</td>
-                                <td>Recibido</td>
+                                <td>Pendiente</td>
+                                <td>
+                                    <div class="d-flex flex-row">
+                                        <button class="btn btn-warning">Editar</button>
+                                        <button class="btn btn-primary">Ocultar</button>
+                                    </div>
+                                </td>
                             </tr>
                             <tr>
                                 <td>5003</td>
@@ -138,7 +152,13 @@
                                 <td>EjemploTipo3</td>
                                 <td>5003</td>
                                 <td>descripcion3</td>
-                                <td>Recibido</td>
+                                <td>Recoger</td>
+                                <td>
+                                    <div class="d-flex flex-row">
+                                        <button class="btn btn-warning">Editar</button>
+                                        <button class="btn btn-primary">Ocultar</button>
+                                    </div>
+                                </td>
                             </tr>
                             <tr>
                                 <td>5004</td>
@@ -152,6 +172,12 @@
                                 <td>5004</td>
                                 <td>descripcion4</td>
                                 <td>Recibido</td>
+                                <td>
+                                    <div class="d-flex flex-row">
+                                        <button class="btn btn-warning">Editar</button>
+                                        <button class="btn btn-primary">Ocultar</button>
+                                    </div>
+                                </td>
                             </tr>
                             <tr>
                                 <td>5005</td>
@@ -164,7 +190,15 @@
                                 <td>EjemploTipo5</td>
                                 <td>5005</td>
                                 <td>descripcion5</td>
-                                <td>Recibido</td>
+                                <td>pendiente</td>
+                                <td>
+                                    <div class="d-flex flex-row">
+                                        <button class="btn btn-warning">Editar</button>
+                                        <button class="btn btn-primary">
+                                            Ocultar
+                                        </button>
+                                    </div>
+                                </td>
                             </tr>
                         </tbody>
                     </table>
@@ -172,11 +206,76 @@
             </div>
         </div>
 
+        <div class="position-absolute w-100 top translate" id="modal">
+            <form class="form-control w-50 pb-5">
+                <h1 class="text-center">Edición de datos</h1>
+                <div class="d-flex flex-row justify-content-center">
+                    <div>
+                        <div class="form-control border-white w-100">
+                            <label for="">Id o Nit :</label>
+                            <input id="nit" type="number" class="form-control">
+                        </div>
+                        <div class="form-control border-white">
+                            <label for="">Nombre :</label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="form-control border-white w-100">
+                            <label for="">Correo :</label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="form-control border-white w-100">
+                            <label for="">Celular Teléfono :</label>
+                            <input type="number" class="form-control">
+                        </div>
+                        <div class="form-control border-white w-100">
+                            <label for="">Dirección :</label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="form-control border-white w-100">
+                            <label for="">Id Donación :</label>
+                            <input type="number" class="form-control" disabled>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="form-control border-white w-100">
+                            <label for="">Fecha :</label>
+                            <input value="" type="text" class="form-control" disabled>
+                        </div>
+                        <div class="form-control border-white w-100">
+                            <label for="">Tipo de producto :</label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="form-control border-white w-100">
+                            <label for="">Peso :</label>
+                            <input type="number" class="form-control">
+                        </div>
+                        <div class="form-control border-white w-100">
+                            <label for="">Descripción :</label>
+                            <input type="text" class="form-control " disabled>
+                        </div>
+                        <div class="form-control border-white w-100">
+                            <label for="">Estado :</label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="form-control border-white w-100">
+                            <label for="">Transporte :</label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="form-control border-white">
+                            <br />
+                            <button id="guardar-sol" class="btn btn-primary w-100">Guardar</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+            <button class="position-absolute btn btn-danger close">Cerrar</button>
+        </div>
     </main>
-    
+
     <footer>
         <img class="ellipse_purple" src="../img/logotipos/Ellipse.png" alt="Ellipse morado">
     </footer>
+    <script src="../js/admin-dona-sol.js"></script>
 </body>
 
 </html>

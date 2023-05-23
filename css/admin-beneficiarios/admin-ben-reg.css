@@ -1,0 +1,36 @@
+.admin-main-div {
+    margin-top: 1%;
+    margin-inline: 3%;
+}
+
+.top {
+    top: 0;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    transition: .4s;
+}
+
+.close {
+    top: 5em;
+    left: 70%;
+}
+
+.translate {
+    transform: translateY(-100%);
+}
+
+.btn-primary {
+    margin-inline: 3%;
+}
+
+/* COLOR DE BOTÓN SELECCIONADO (INICIO) */
+#admin-main-a-beneficiarios {
+    background-color: #6852EF;
+    color: white;
+}
+
+#admin-item-a-registro1 {
+    color: black;
+}
+/* COLOR DE BOTÓN SELECCIONADO (FIN) */
