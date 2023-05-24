@@ -15,7 +15,7 @@
   </div>
 
   <div class="registro-container">
-    <form>
+    <form id="formRegistro">
 
       <div style="text-align: center;">
         <img src="../img/logotipos/My project-1 (6).png" alt="Logo-banco-naranjasl" width="120" height="120"
@@ -34,7 +34,7 @@
         <input type="text" id="codigo" name="codigo" placeholder="codigo" style="margin-top: 3px;">
       </div>
       <div class="input-container">
-        <input type="submit" value="Registrarse" onclick="registrar()">
+        <input type="submit" value="Registrarse" onclick="registrarValidaciones(event)">
       </div>
 
       <div class="texto-cualesmicodigo">
@@ -42,8 +42,6 @@
           <p>¿Cual es mi código?</p>
         </a>
       </div>
-
-
 
     </form>
   </div>

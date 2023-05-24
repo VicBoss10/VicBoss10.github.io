@@ -118,8 +118,7 @@ form .checkbox:focus{
 
 }
 
-.user-details .input-box input:focus,
-.user-details .input-box input:valid{
+.user-details .input-box input:focus{
 
     border-color: #6852ef;
 }

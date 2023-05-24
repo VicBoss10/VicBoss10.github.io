@@ -12,8 +12,8 @@
     <link href="../css/donar/styleDA.css" rel="stylesheet">
     <link href="../css/donar/styleDD.css" rel="stylesheet">
     <script defer src="../js/modales.js"></script>
-    <script defer src="../js/leerform.js"></script>
-    <script src="../js/donar.js"> </script>
+    <script defer src="../api/leerform.js"></script>
+    <!-- <script src="../js/donar.js"> </script> -->
     <title>Banco de Alimentos</title>
 </head>
 
@@ -144,15 +144,20 @@
                             <input type="text" placeholder="Nombre" name="nombre" required>
                         </div>
                         <div class="input-box">
-                            <span class="details">Fecha de donación</span>
-                            <input type="text" placeholder="dd/mm/aaaa" name="fecha" required>
+                            <span class="details">Correo electrónico</span>
+                            <input type="email" placeholder="correo" name="correo" >
+                        </div>
+                        <div class="input-box">
+                            <span class="details">Teléfono</span>
+                            <input type="text" placeholder="telefono" name="tel" >
                         </div>
                         <div class="input-box">
                             <span class="details">Tipo de alimento</span>
-                            <select class="checkbox" name="tipo-alimento">
+                            <select class="checkbox" name="tipo">
                                 <option>Lácteos</option>
                                 <option>Frutas y verduras</option>
                                 <option>Alimentos larga duración</option>
+                                <option>Otro</option>
                             </select>
                         </div>
                         <div class="input-box">
@@ -179,7 +184,7 @@
                         </div>
 
                         <div class="button">
-                            <input type="submit" value="Registrar" id="enviar" onclick="donar()">
+                            <input type="submit" value="Registrar" id="enviar">
                         </div>
 
                     </div>
