@@ -1,4 +1,4 @@
-function loguear() {
+function loguearValidaciones() {
   const form = document.querySelector('form');
   const usernameInput = document.getElementById('username');
   const passwordInput = document.getElementById('password');
@@ -20,17 +20,13 @@ function loguear() {
       }
       else {
 
+        loguear(event);
         // aqui se validaria la informacion e¿ingresada
         // EL admin@gmail.com esta de prueba igual que la contraseña
-        if (username === 'admin@gmail.com' && password === '123') {
-          window.open('administrador.html', '_blank');
+        // if (username === 'admin@gmail.com' && password === '123') {
+        //   window.open('administrador.html', '_blank');
 
-          usernameInput.value = '';
-          passwordInput.value = '';
-
-        } else {
-          alert('El usuario o la contraseña son incorrectos.');
-        }
+        // }
       }
     }
   }, { once: true });
@@ -43,5 +39,40 @@ function isValidEmail(email) {
   return emailRegex.test(email);
 }
 
+//PARTE DEL FETCHHHHHH
+
+async function loguear(event){
+
+  event.preventDefault();
+
+  const user = document.getElementById('username').value.trim();
+  const pas = document.getElementById('password').value.trim();
+ 
+  const datosLogin = {"username":user,"ps":pas};
+  const datosJLogin = JSON.stringify(datosLogin);
+  console.log(datosJLogin);
+
+    await fetch("http://localhost:3000/login.html",{
+      method:"GET",
+      headers: {
+        "Content-Type": "application/json", 
+        "admin": user,
+        "pas": pas,
+      },
+    })
+    .then((res) => res.json())
+    .then(async (data) => {
+
+      if(data.esadmin == "V"){
+        window.open('administrador.html', '_blank');
+        usernameInput.value = '';
+        passwordInput.value = '';
+      }else{
+        alert("Usuario o contraseña incorrectos");
+      }
+      console.log(data);
+    });
+  
+}
 
 

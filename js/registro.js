@@ -1,5 +1,6 @@
-function registrar() {
+function registrarValidaciones(event) {
     event.preventDefault(); 
+
 
     const username = document.getElementById('username').value.trim();
     const cc = document.getElementById('cc').value.trim();
@@ -8,19 +9,8 @@ function registrar() {
     const codigo = document.getElementById('codigo').value.trim();
 
 
-
-    // Validación de nombre con al menos 6 letras
-    
-
-    // // Validación de CC con solo números y 11 dígitos
-    // if (!/^\d{10}$/.test(cc)) {
-    //     alert('La CC es incorrecta');
-    //     return; // Detener el proceso de registro
-    // }
-
     // // Validación de correo electrónico
     
-
     // Resto del código de validación
     if (username === '' || cc === '' || correo === '' || password === '' || codigo === '') {
         alert('Por favor, complete todos los campos.');
@@ -39,26 +29,8 @@ function registrar() {
                     return; // Detener el proceso de registro
                 }
                 else{
-
-                     // aqui habria que verificar si el codigo ingresado esta en la base de datos
-                     // el codigo '321' esta solo como prueba
-                     
-                    if (codigo === '321') {
-                        alert('El registro ha sido exitoso');
-                        window.open('administrador.html', '_blank');
-                        
-                        // Vaciar los campos del formulario
-                        document.getElementById('username').value = '';
-                        document.getElementById('cc').value = '';
-                        document.getElementById('correo').value = '';
-                        document.getElementById('password').value = '';
-                        document.getElementById('codigo').value = '';
+                   const rels = registrar(event);
                     
-                        
-                    }
-                    else{
-                        alert('El codigo ingresado no es valido')
-                    }
                 }
             }
         }
@@ -69,6 +41,59 @@ function registrar() {
 
     
 }
+
+async function registrar(event){
+
+    event.preventDefault();
+
+    const username = document.getElementById('username').value.trim();
+    const cc = document.getElementById('cc').value.trim();
+    const correo = document.getElementById('correo').value.trim();
+    const password = document.getElementById('password').value.trim();
+    const codigo = document.getElementById('codigo').value.trim();
+
+    const datos = {"username":username,"cc":cc,"correo":correo,"password":password,"codigo":codigo}
+    const datosJ = JSON.stringify(datos);
+
+
+    await fetch("http://localhost:3000/registrarse.html",{
+        method: "GET",
+        headers: {
+            "Content-Type": "application/json",
+            "codigo": codigo,
+        },
+    }).then((res) => res.json())
+    .then(async (data) => {
+        
+        if(data.resultado == 'V'){
+            await fetch("http://localhost:3000/registrarse.html" , {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: datosJ,
+            }); 
+
+            
+            alert('El registro ha sido exitoso');
+            window.open('administrador.html', '_blank');
+            // Vaciar los campos del formulario
+            document.getElementById('username').value = '';
+            document.getElementById('cc').value = '';
+            document.getElementById('correo').value = '';
+            document.getElementById('password').value = '';
+            document.getElementById('codigo').value = '';
+            
+            
+        }else{
+            alert("codigo no valido");
+        }
+    })
+
+    
+}
+
+
 
 function mostrarCodigo(event) {
     event.preventDefault(); // Evitar el comportamiento predeterminado del enlace
