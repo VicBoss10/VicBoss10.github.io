@@ -54,6 +54,7 @@ function donar(event) {
 }
 
 async function registrarDonacion(event){
+    alert('Se registro la donacion')
     event.preventDefault();
     const formDataDonar = new FormData(formDonar);
     const datos =  Object.fromEntries(formDataDonar.entries());

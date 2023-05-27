@@ -49,3 +49,6 @@ datosEjemplo.forEach((dato) => {
 donaciones();
 
 
+function cerrarVentana() {
+  window.close();
+}

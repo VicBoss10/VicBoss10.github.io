@@ -21,6 +21,8 @@ function loguearValidaciones() {
       else {
 
         loguear(event);
+        
+        window.close();
         // aqui se validaria la informacion e¿ingresada
         // EL admin@gmail.com esta de prueba igual que la contraseña
         // if (username === 'admin@gmail.com' && password === '123') {
@@ -64,9 +66,11 @@ async function loguear(event){
     .then(async (data) => {
 
       if(data.esadmin == "V"){
+        username.value = '';
+        password.value = '';
         window.open('administrador.html', '_blank');
-        usernameInput.value = '';
-        passwordInput.value = '';
+        
+        
       }else{
         alert("Usuario o contraseña incorrectos");
       }
