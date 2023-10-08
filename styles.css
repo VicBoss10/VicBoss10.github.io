@@ -1,0 +1,104 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+#forma {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#forma h1 {
+    text-align: center;
+}
+
+label {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+label span {
+    width: 120px; 
+    margin-right: 10px;
+    text-align: right;
+}
+
+input {
+    flex: 1;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#tabla {
+    max-width: 600px;
+    margin: 20px auto;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#tabla th, #tabla td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+#tabla th {
+    background-color: #4caf50;
+    color: white;
+}
+
+#respuesta {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 10px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#grafico {
+    max-width: 600px;
+    margin: 20px auto;
+    display: block;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+}
+
+#b_Reset {
+    margin-left: 35%;
+    width: 30%;
+    padding: 10px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}

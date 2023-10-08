@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+    <form id="forma">
+        <h1>Serie de Maclaurin</h1>
+    <hr>
+    <br>
+
+    <label> Valor de X:</label>
+    <input type="number" required id="x_value">
+    <br>
+
+    <label>Numero de cifras significativas:</label>
+    <input type="number" required min="0" id="c_significativas">
+    <br>
+
+    <label>Funcion a realizar:</label>
+    Seno(X)<input type="radio" name="optFun" id="optSeno" value="S">
+    Coseno(X)<input type="radio" name="optFun" id="optCoseno" value="C">
+    <br>
+    <br>
+
+    <button type="submit" id="bt_Calcular">Calcular</button>
+    </form>
+    <br>
+
+    <table border="1px" id="tabla">
+        <tr>
+            <th>Termino</th>
+            <th>Resultado</th>
+            <th>COS</th>
+            <th>E%</th>
+        </tr>
+
+    </table>
+    
+    <br>
+
+    <hr>
+
+    <h2>Resultados</h2>
+
+    <div id="respuesta"></div>
+
+    <br>
+
+    <button type="reset" id="b_Reset">Volver a Calcular</button>
+
+    <hr>
+
+    <!-- <canvas id="grafico"></canvas> -->
+
+    <script src="operaciones.js"></script>
+</body>
+    
+</html>
