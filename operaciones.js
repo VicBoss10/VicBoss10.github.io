@@ -10,6 +10,8 @@ function calcular() {
     let terminos = []
     let erroresPorcentuales = []
 
+    //calculo de la funcion seno
+
     if (funcion == "S") {
         let termino = 0
         let resultado = 0
@@ -28,7 +30,7 @@ function calcular() {
             resultado = Math.pow(-1, termino) * (Math.pow(x, ((2 * termino) + 1)) / factorial((2 * termino) + 1))
             seno = seno + resultado
             termino = termino + 1
-            error_por =Math.abs(((seno - aprox_pre) / seno) * 100)
+            error_por = Math.abs(((seno - aprox_pre) / seno) * 100)
             aprox_pre = seno
             terminos.push(termino);
             erroresPorcentuales.push(error_por);
@@ -45,11 +47,11 @@ function calcular() {
 
         document.getElementById("tabla").innerHTML = fila;
         document.getElementById("respuesta").innerHTML = `<lb>seno(${x}) = ${seno} <br> Numéro de iteraciones: ${termino} <br>
-        Criterio de error: ${c_error} <br> Error obtenido: ${error_por}</lb>`
+        Criterio de error: ${c_error}% <br> Error obtenido: ${error_por}%</lb>`
         event.preventDefault()
     }
 
-
+    //calculo de la funcion coseno
     if(funcion=="C"){
         let termino = 0
         let resultado = 0
@@ -85,7 +87,7 @@ function calcular() {
 
         document.getElementById("tabla").innerHTML = fila
         document.getElementById("respuesta").innerHTML = `<lb>Coseno(${x}) = ${cos} <br> Numéro de iteraciones: ${termino} <br>
-        Criterio de error: ${c_error} <br> Error obtenido: ${error_por}</lb>`
+        Criterio de error: ${c_error}% <br> Error obtenido: ${error_por}%</lb>`
         event.preventDefault()
     }
 
