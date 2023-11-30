@@ -1,0 +1,25 @@
+Descripcion y precio
+
+Busos: 
+buso1 - Hoodie BUHO REAL NEGRO - $230.000
+buso2 - HOODIE BLURRED LOGO verde - $280.000
+buso3 - Hoodie NATURE´S ART AGENCY BLANCO - $180.000
+buso4 - Hoodie kingdom art negro - $250.000
+
+Camisas:
+camisa1 - Camiseta TANGARA REAL verde - $119.000
+camisa2 - Camiseta ART AGENCY BLANCO - $119.000
+camisa3 - Camiseta Fiction mostaza - $105.000
+camisa4 -Camiseta box oversized Trust the logo gris - $112.000
+
+Pantalones:
+pantalon1 - JEAN CARPENTER HOMBRE 710 GRIS - $154.000
+pantalon2 - Jean carpenter 369 mujer acid wash - $140.000
+pantalon3 - JEAN CARPENTER HOMBRE 710 crudo - $140.000
+pantalon4 - Jean Carpenter Hombre 710 negro - $154.000
+
+Pantalonetas:
+pantaloneta1 - Bermuda cargo negra - $108.000
+pantaloneta2 - Biker weedgreen negro - $56.000
+pantaloneta3 - Bermuda comunidad andina amarillo - $54.000
+pantaloneta 4 - Bermuda the pathfinder negro - $81.000
