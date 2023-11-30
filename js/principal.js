@@ -92,8 +92,8 @@ for(let i = 1; i <= keys.length; i++){
     for(let e = 1; e <= keys_subobjeto_des.length; e++){
         
         todos_los_productos_inner += `
-            ${(e-1%4 == 0 || e == 1)? `<h3 class="col s12 m12" id="${keys[i-1]}"> ${keys[i-1]}</h3>`:''}
-            <div class="col s12 m3">
+            ${(e-1%4 == 0 || e == 1)? `<h3 id="${keys[i-1]}"> ${keys[i-1]}</h3> <hr>`:''}
+            <div class="col s12 m3"">
                 <div class="card" style="height: 500px">
                     <div class="card-image">
                         <img class="foto" carpeta="${keys[i-1]}" nombre="${keys_subobjeto_des[e-1]}" src="imgs/${keys[i-1]}/${keys_subobjeto_des[e-1]}.1.webp">

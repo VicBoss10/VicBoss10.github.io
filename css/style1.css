@@ -1,0 +1,37 @@
+.modal{
+    width: 40%;
+    max-height: 90%;
+  }
+
+.modal .slider {
+    max-height: 400px;
+}
+
+.modal .slider ul {
+    max-height: 400px;
+}
+
+
+.modal .slider ul li {
+    max-height: 400px;
+}
+
+.caption {
+    margin-top: 250px;
+}
+
+.caption a {
+    animation: bounce 1.5s infinite;
+}
+
+.container h3{
+    font-size:large; 
+    font-weight: bold; 
+}
+
+@media screen and (max-width:900px) {
+    .modal{
+        width: 60%;
+    }
+    
+}

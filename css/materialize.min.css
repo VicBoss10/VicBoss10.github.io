@@ -44,15 +44,10 @@ body {
   .btn-animated:active {
     animation: scaleDown 0.3s ease-in-out;
   }
-  
-  .modal .modal-content .slider ul li {
-    max-height: 400px;
-  }
 
-  .modal .modal-content .slider ul {
-    max-height: 400px;
-  }
-  
+  .modal{
+    max-height: 90%;
+  }  
     .materialize-red {
         background-color: #e51c23 !important
     }
