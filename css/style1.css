@@ -24,14 +24,33 @@
     animation: bounce 1.5s infinite;
 }
 
+
 .container h3{
     font-size:large; 
     font-weight: bold; 
 }
 
+
+
 @media screen and (max-width:900px) {
     .modal{
-        width: 60%;
+        width: 80%;
     }
     
 }
+
+@media screen and (max-width:600px) {
+    #stands {
+        margin-left: 10%;
+    }
+    
+}
+
+@media screen and (max-width:1000px) {
+    .navmenu{
+        display: block;
+    }
+    
+}
+
+    

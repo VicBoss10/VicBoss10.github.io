@@ -44,10 +44,7 @@ body {
   .btn-animated:active {
     animation: scaleDown 0.3s ease-in-out;
   }
-
-  .modal{
-    max-height: 90%;
-  }  
+  
     .materialize-red {
         background-color: #e51c23 !important
     }

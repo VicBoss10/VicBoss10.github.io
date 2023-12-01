@@ -31,7 +31,7 @@ const descripcion = {
     {   camisa1: "Camiseta TANGARA REAL verde",
         camisa2: "Camiseta ART AGENCY BLANCO",
         camisa3: "Camiseta Fiction mostaza",
-        camisa4: "Camiseta box oversized Trust the logo gris", 
+        camisa4: "Camiseta box oversized Trust", 
     },
     Pantalones:{
         

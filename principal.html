@@ -16,16 +16,41 @@
 
 <body>
     <!-- Dropdown Structure -->
-    <ul id="dropdown1" class="dropdown-content black">
-        <li><a href="#!">Busos</a></li>
-        <li><a href="#!">Camisas</a></li>
-        <li><a href="#!">Pantalones</a></li>
-        <li><a href="#!">Pantalonetas</a></li>
+    
 
+    <ul id="navmenu" class="sidenav">
+        <li><a href="#">Todos los productos</a></li>
+        <li><a href="#">Accesorios</a></li>
+        <li><a class="dropdown-trigger" href="#!" data-target="dropdown2">Compra por producto<i
+                    class="material-icons right">arrow_drop_down</i></a></li>
+        <li><a href="#">Buscar</a></li>
+        <li><a href="#">Ingresar</a></li>
+        <li><a href="#" style="animation: bounce 2s infinite;"> <i class="material-icons">local_grocery_store</i></a>
     </ul>
-    <nav>
+
+    <ul id="dropdown1" class="dropdown-content black" style="z-index: +10;">
+        <li><a class="white-text" href="#Busos">Busos</a></li>
+        <li><a class="white-text" href="#Camisas">Camisas</a></li>
+        <li><a class="white-text" href="#Pantalones">Pantalones</a></li>
+        <li><a class="white-text" href="#Pantalonetas">Pantalonetas</a></li>
+    </ul>
+
+    <ul id="dropdown2" class="dropdown-content black" style="z-index: +10;">
+        <li><a class="white-text" href="#Busos">Busos</a></li>
+        <li><a class="white-text" href="#Camisas">Camisas</a></li>
+        <li><a class="white-text" href="#Pantalones">Pantalones</a></li>
+        <li><a class="white-text" href="#Pantalonetas">Pantalonetas</a></li>
+    </ul>
+
+    <nav style="position: fixed; top: 0; z-index: +10;">
         <div class="nav-wrapper black">
             <a href="#!" class="left brand-logo" style="margin-left: 20px;">DGreen</a>
+            <ul class="right hide-on-large-only">   
+                <li><a href="#" data-target="navmenu" class="sidenav-trigger">
+                        <i class="material-icons">menu</i>
+                    </a></li>
+            </ul>
+
             <ul class="right hide-on-med-and-down">
                 <li><a href="#">Todos los productos</a></li>
                 <li><a href="#">Accesorios</a></li>
@@ -34,7 +59,10 @@
                             class="material-icons right">arrow_drop_down</i></a></li>
                 <li><a href="#"> <i class="material-icons">search</i></a></li>
                 <li><a href="#"> <i class="material-icons">person</i></a></li>
-                <li><a href="#" style="animation: bounce 2s infinite;"> <i class="material-icons">local_grocery_store</i></a></li>
+                <li><a href="#" style="animation: bounce 2s infinite;"> <i
+                            class="material-icons">local_grocery_store</i>
+                    </a>
+                </li>
             </ul>
         </div>
     </nav>
@@ -42,9 +70,9 @@
     <div class="slider">
         <ul class="slides" style="box-shadow: 10px 10px 10px rgba(49, 41, 41, 0.2);">
             <li>
-                <img src="imgs/carrusel/carrusel1.webp"  alt="">
+                <img src="imgs/carrusel/carrusel1.webp" alt="">
                 <div class="caption center-align">
-                    <a class="waves-effect waves-light btn black w-400" >Comprar</a>
+                    <a class="waves-effect waves-light btn black w-400">Comprar</a>
                 </div>
             </li>
             <li>
@@ -71,34 +99,65 @@
         </ul>
     </div>
 
-    <div class="row">
-    <div class="col s8 m12" style="padding: 30px; margin: auto;">
-        
-    <div class="container" style="margin-top: 60px;">
+    <div class="row" id="stands">
+        <div class="col s10 m12" style="padding: 30px;">
 
-        <h3 style="font-size:large; font-weight: bold; text-align: center;">Nuestros Productos</h3>
-        <div class="row" id="todos_los_productos">
+            <div class="container" style="margin-top: 60px;">
 
+                <h3 style="font-size:large; font-weight: bold; text-align: center;">Nuestros Productos</h3>
+                <div class="row" id="todos_los_productos">
+
+                </div>
+
+            </div>
         </div>
 
     </div>
-</div>
 
-</div>
+    <footer class="page-footer black">
+        <div class="container">
+            <div class="row">
+                <div class="col s12 m3 l4">
+                    <h5 class="white-text">Politicas</h5>
+                    <ul>
+                        <li><a class="grey-text text-lighten-3" href="#!">Términos & Condiciones</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">Envíos</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">About us</a></li>
+                    </ul>
+                    <p class="grey-text text-lighten-4">Recuerda que siempre pensamos en tí... <i
+                            class="material-icons">favorite</i></p>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                    <h5 class="white-text">Puedes seguirnos</h5>
+                    <ul>
+                        <li><a class="grey-text text-lighten-3" href="#!">Instagram</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!"><i class="material-icons">facebook</i></a>
+                        </li>
+                        <li><a class="grey-text text-lighten-3" href="#!">Youtube</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                © 2014 Copyright Text
+            </div>
+        </div>
+    </footer>
 
     <!-- Ventanas emergentes -->
 
 
-    <div id="vemerinicio" class="modal" >
+    <div id="vemerinicio" class="modal">
         <div class="modal-content">
-            <h4 >Descuentos</h4>
+            <h4>Descuentos</h4>
             <p>20% off en los siguientes productos</p>
 
             <div class="slider" style="box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);">
-                <ul class="slides" >
-                    <li> 
+                <ul class="slides">
+                    <li>
                         <img src="imgs/busos/buso4.1.webp" alt="">
-                        <div class="caption center" >
+                        <div class="caption center">
                             <a class="btn red w-400">Comprar</a>
                         </div>
                     </li>
@@ -120,14 +179,14 @@
                             <a class="waves-effect waves-light btn red w-400">Comprar</a>
                         </div>
                     </li>
-                </ul>    
+                </ul>
             </div>
         </div>
         <div class="modal-footer">
             <a href="#!" class="modal-close waves-effect btn-small black">Cerrar</a>
         </div>
     </div>
-    
+
     </div>
 
 
