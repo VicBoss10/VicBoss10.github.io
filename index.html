@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coincidir</title>
+  <!-- Incluir la biblioteca p5.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+</head>
+<body>
+  
+  <!-- Div para el reproductor de YouTube -->
+  <div id="player" style="position: absolute; left: -9999px;"></div>
+
+  <!-- Script para cargar el reproductor de YouTube -->
+  <script>
+    // Función que crea el reproductor de YouTube
+    function onYouTubeIframeAPIReady() {
+      new YT.Player('player', {
+        videoId: 'hoRd8nNq7PI', // Reemplaza con el ID del video de YouTube
+        events: {
+          'onReady': onPlayerReady
+        },
+        playerVars: {
+          'controls': 0,
+          'showinfo': 0,
+          'modestbranding': 1,
+          'autoplay': 1,
+          'loop': 1,
+          'playlist': 'hoRd8nNq7PI' // Mismo ID del video para el loop de audio
+        }
+      });
+    }
+
+    // Función que se ejecuta cuando el reproductor está listo
+    function onPlayerReady(event) {
+      event.target.setVolume(100); // Establecer el volumen al mínimo (0)
+    }
+  </script>
+
+  <!-- Script para cargar la API de YouTube -->
+  <script src="https://www.youtube.com/iframe_api"></script>
+
+  <!-- Script de tu simulación en p5.js -->
+  <script src="sketch.js"></script>
+</body>
+</html>
