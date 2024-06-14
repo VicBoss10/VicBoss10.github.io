@@ -95,10 +95,10 @@ class Ball {
       this.x += this.xSpeed;
       this.y += this.ySpeed;
 
-      if (this.x > (width) || this.x < 0) {
+      if (this.x+20 > (width) || this.x+20 < 0) {
         this.xSpeed *= -1;
       }
-      if (this.y > (height) || this.y < 0) {
+      if (this.y-20 > (height) || this.y-20 < 0) {
         this.ySpeed *= -1;
       }
     } else {
