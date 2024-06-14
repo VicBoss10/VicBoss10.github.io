@@ -21,15 +21,15 @@ function draw() {
     mostrarTexto("Una vida"); // Mostrar texto cuando aparece la primera bola
   }
 
-  if (balls.length == 2) {
-    mostrarTexto("Una vida"); // Mostrar texto cuando aparece la primera bola
-    // primeraBola = balls[1]; // Almacenar la primera bola creada
-    // primeraBola.x = -2;
-    // primeraBola.y = height/2;
-    // primeraBola.xSpeed = 3;
-    // primeraBola.ySpeed = 0;
+  // if (balls.length == 2) {
+  //   mostrarTexto("Una vida"); // Mostrar texto cuando aparece la primera bola
+  //   // primeraBola = balls[1]; // Almacenar la primera bola creada
+  //   // primeraBola.x = -2;
+  //   // primeraBola.y = height/2;
+  //   // primeraBola.xSpeed = 3;
+  //   // primeraBola.ySpeed = 0;
 
-  }
+  // }
   // if(contadorOrbita>1){
   //   primeraBola.xSpeed = 3;
   //   primeraBola.ySpeed = 3;
@@ -95,10 +95,10 @@ class Ball {
       this.x += this.xSpeed;
       this.y += this.ySpeed;
 
-      if (this.x+20 > (width) || this.x+20 < 0) {
+      if (this.x+20 > (width) || this.x-20 < 0) {
         this.xSpeed *= -1;
       }
-      if (this.y-20 > (height) || this.y-20 < 0) {
+      if (this.y+20 > (height) || this.y-20 < 0) {
         this.ySpeed *= -1;
       }
     } else {
