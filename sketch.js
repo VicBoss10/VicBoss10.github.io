@@ -4,9 +4,13 @@ let orbitandoTextoVisible = false;
 let contadorOrbita = 0;
 
 
+function preload() {
+  centuryGothic = 'Century Gothic';
+}
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
+  textFont(centuryGothic);
 }
 
 function draw() {
@@ -18,7 +22,7 @@ function draw() {
   }
 
   if (balls.length == 1) {
-    mostrarTexto("Una vida"); // Mostrar texto cuando aparece la primera bola
+    mostrarTexto("Un punto"); // Mostrar texto cuando aparece la primera bola
   }
 
   // if (balls.length == 2) {
@@ -35,7 +39,7 @@ function draw() {
   //   primeraBola.ySpeed = 3;
   // }
   if (orbitandoTextoVisible && (contadorOrbita == 1)) {
-    mostrarTexto("Dos caminos que se cruzan");
+    mostrarTexto("Caminos");
   }
 
   if (balls.length == 2) {
@@ -43,8 +47,25 @@ function draw() {
   }
 
   if (contadorOrbita == 2) {
-    mostrarTexto("¿Casualidad?");
+    mostrarTexto("Encuentro");
   }
+
+  if (contadorOrbita == 4) {
+    mostrarTexto("¿Cual fue tu camino para llegar hasta aqui?");
+  }
+
+  if (contadorOrbita == 5) {
+    mostrarTexto("El arte");
+  }
+
+  if (contadorOrbita == 7) {
+    mostrarTexto("Desenlace");
+  }
+
+  if (contadorOrbita == 9) {
+    mostrarTexto("Final");
+  }
+
   for (let ball of balls) {
     ball.move();
     ball.checkCollision(balls);
@@ -62,7 +83,7 @@ function draw() {
 
 function mostrarTexto(mensaje) {
   fill(0, 255);
-  textSize(24);
+  textSize(30);
   textAlign(CENTER, CENTER);
   text(mensaje, width / 2, height / 2);
 }
